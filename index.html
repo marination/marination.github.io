@@ -1,53 +1,122 @@
 <html>
-  <head>
-	<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-	<link rel="stylesheet" href="css/bio.css">
-  </head>
+	<head>
+		<meta charset="UTF-8">
+		<link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<link rel="stylesheet" href="css/bio.css">
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	</head>
 
-  <div class="nav">
-	<div style="padding-left: 10vw;">
-	</div>
-	<div class="right-icons">
-		<span style="margin-right: 2rem;">
-			<a href="https://github.com/marination" style="text-decoration: none;">
-				<img class="icon-md" src="assets/github.svg"/>
-			</a>
-		</span>
-		<span style="margin-right: 2rem;">
-			<a href="https://www.linkedin.com/in/marica-dsouza-47a2691a6" style="text-decoration: none;">
-				<img class="icon-md" src="assets/linkedin.svg"/>
-			</a>
-		</span>
-	</div>
-  </div>
-  <body>
-	<div class="home-container">
-	  <div class="my-info">
-		<span class="code"><intro></span>
-		<div class="new-font">Hey I'm Marica</div>
-		<div class="border-half"></div>
-		<div class="hero-subtext">
-		  I'm a Mumbai based software developer <a href="https://frappe.io/" style="color: #8a8af7; text-decoration: none;">@Frappe Tech</a>
-		  <br><br>
-		  I enjoy building web applications with an attempt at beautiful UI.<br> When I'm not working: I'm an amateur designer, bathroom singer and an absolute glut.<br>
-		  <button class="lingo-btn">Python</button>
-		  <button class="lingo-btn">JavaScript</button>
-		  <button class="lingo-btn">XTech</button>
+	<nav>
+		<div style="padding-left: 10vw;">
 		</div>
+		<div class="right-icons">
+			<span style="margin-right: 2rem;">
+				<a href="https://github.com/marination" target="_blank">
+					<img class="icon-md" src="assets/github.svg"/>
+				</a>
+			</span>
+			<span style="margin-right: 2rem;">
+				<a href="https://www.linkedin.com/in/marica-dsouza-47a2691a6" target="_blank">
+					<img class="icon-md" src="assets/linkedin.svg"/>
+				</a>
+			</span>
+		</div>
+	</nav>
 
-	  </div>
+	<body>
+		<section>
+			<div id="hero">
+				<div class="hero-content">
+					<div class="my-info">
+						<span class="code"><intro></span>
+						<div class="new-font">Hey I'm Marica 👋 </div>
+						<div class="border-half"></div>
+						<div class="hero-subtext">
+						<span style="color: var(--primary-font);">I'm a Mumbai based software developer</span>
+						<a href="https://frappe.io/" target="_blank" style="color: #8a8af7;">
+							@Frappe Tech
+						</a>
+						<br><br>
+						<span>I enjoy building web applications with an attempt at minimal UI.</span>
+						<br>
+						<span>When I'm not working: I'm an amateur designer, bathroom singer and an absolute glut.</span>
+						<br>
+						<button class="lingo-btn">Python</button>
+						<button class="lingo-btn">JavaScript</button>
+						<button class="lingo-btn">HTML</button>
+						<button class="lingo-btn">CSS</button>
+						</div>
+					</div>
+					<div class="my-image">
+						<div class="pfp">
+						</div>
+					</div>
+				</div>
+			</div>
 
-	  <div class="my-image">
-		   <div class="pfp">
-		  </div>
-	  </div>
+			<div id="mouse-scroll" class="drop-in h-center">
+				<span>
+					<img class="icon-md" src="assets/mouse.png"/>
+				</span>
+			</div>
+		</section>
 
-	  <div>
-	  </div>
-	</div>
-	<div class="work-container">
-		<div class="new-font" style="text-align: center; width: 100%; font-size: 26px;">x -- WIP -- x</div>
-	</div>
-  </body>
+		<main id="work-container">
+			<div class="new-font" style="text-align: left; font-size: 26px; padding-left: 6rem;padding-top: 6rem">
+				Work
+			</div>
+
+			<div class="work-grid">
+				<a href="https://github.com/frappe/erpnext/pulls/marination" target="_blank">
+					<div class="project-card"
+						data-aos="fade-up"
+						data-aos-duration="1000"
+						data-aos-anchor-placement="top-bottom">
+						<div class="project-img">
+							<img src="assets/erpnext.png"/>
+						</div>
+						<div class="project-info">
+							<div class="project-title">ERPNext</div>
+							<span class="project-content">
+								An Open-source, powerful and beautiful ERP for businesses. Built on Frappe Framework in Python x Javascript.
+							</span>
+						</div>
+					</div>
+				</a>
+
+				<a href="https://github.com/frappe/frappe/pulls/marination" target="_blank">
+					<div class="project-card"
+					data-aos="fade-down"
+					data-aos-duration="1000"
+					data-aos-anchor-placement="top-bottom">
+						<div class="project-img">
+							<img src="assets/frappe.png"/>
+						</div>
+						<div class="project-info">
+							<div class="project-title">Frappe</div>
+							<span class="project-content">
+								A low code web framework built Python x JavaScript, fuelled by coffee.
+							</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</main>
+
+		<footer>
+			<div class="h-center">
+				<p>
+					Made with 🧡 by
+					<a href="https://github.com/marination" target="_blank" style="color: #8a8af7;">
+						@marination
+					</a>
+				</p>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
 </html>
